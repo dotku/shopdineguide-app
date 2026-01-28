@@ -4,32 +4,42 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { SearchBar } from '@/src/components/SearchBar';
 import { FilterBar } from '@/src/components/FilterBar';
 import { LocationPicker } from '@/src/components/LocationPicker';
+import { CategoryPills } from '@/src/components/CategoryPills';
 import { BusinessList } from '@/src/components/BusinessList';
 import { Colors } from '@/src/constants/colors';
 import { database } from '@/src/services/database';
 import { useAppStore } from '@/src/hooks/useAppStore';
-import type { Business, ContentFilter } from '@/src/types/business';
+import type { Business } from '@/src/types/business';
 
 const PAGE_SIZE = 20;
 
-export default function DiscoverScreen() {
+export default function DineScreen() {
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
   const [hasMore, setHasMore] = useState(true);
   const isDbReady = useAppStore((s) => s.isDbReady);
-  const { activeFilter, activeCity, activeNeighborhood, setActiveFilter, setActiveCity, setActiveNeighborhood } = useAppStore();
+  const {
+    activeFilter,
+    activeCity,
+    activeNeighborhood,
+    activeCategory,
+    setActiveFilter,
+    setActiveCity,
+    setActiveNeighborhood,
+    setActiveCategory,
+  } = useAppStore();
 
   const loadBusinesses = useCallback(
     async (pageNum: number, append = false) => {
       setLoading(true);
       try {
         const results = await database.getBusinessesBySection(
-          undefined,
+          'dine',
           activeFilter,
           activeCity || undefined,
           activeNeighborhood || undefined,
-          undefined,
+          activeCategory || undefined,
           PAGE_SIZE,
           pageNum * PAGE_SIZE
         );
@@ -40,12 +50,12 @@ export default function DiscoverScreen() {
         }
         setHasMore(results.length === PAGE_SIZE);
       } catch (err) {
-        console.error('Failed to load businesses:', err);
+        console.error('Failed to load dine businesses:', err);
       } finally {
         setLoading(false);
       }
     },
-    [activeFilter, activeCity, activeNeighborhood]
+    [activeFilter, activeCity, activeNeighborhood, activeCategory]
   );
 
   useEffect(() => {
@@ -65,6 +75,7 @@ export default function DiscoverScreen() {
 
   const header = (
     <View>
+      <CategoryPills activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
       <FilterBar activeFilter={activeFilter} onFilterChange={setActiveFilter} />
       <LocationPicker
         activeCity={activeCity}
@@ -84,7 +95,7 @@ export default function DiscoverScreen() {
         onLoadMore={loadMore}
         hasMore={hasMore}
         ListHeaderComponent={header}
-        emptyMessage="No businesses found"
+        emptyMessage="No restaurants found"
       />
     </SafeAreaView>
   );

@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SearchBar } from '@/src/components/SearchBar';
 import { FilterBar } from '@/src/components/FilterBar';
@@ -12,7 +12,7 @@ import type { Business, ContentFilter } from '@/src/types/business';
 
 const PAGE_SIZE = 20;
 
-export default function DiscoverScreen() {
+export default function DealsScreen() {
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
@@ -40,7 +40,7 @@ export default function DiscoverScreen() {
         }
         setHasMore(results.length === PAGE_SIZE);
       } catch (err) {
-        console.error('Failed to load businesses:', err);
+        console.error('Failed to load deals:', err);
       } finally {
         setLoading(false);
       }
@@ -65,6 +65,12 @@ export default function DiscoverScreen() {
 
   const header = (
     <View>
+      <View style={styles.headerContainer}>
+        <Text style={styles.headerTitle}>Deals & Popular</Text>
+        <Text style={styles.headerSubtitle}>
+          Top-rated businesses in the Bay Area
+        </Text>
+      </View>
       <FilterBar activeFilter={activeFilter} onFilterChange={setActiveFilter} />
       <LocationPicker
         activeCity={activeCity}
@@ -84,7 +90,7 @@ export default function DiscoverScreen() {
         onLoadMore={loadMore}
         hasMore={hasMore}
         ListHeaderComponent={header}
-        emptyMessage="No businesses found"
+        emptyMessage="No deals found"
       />
     </SafeAreaView>
   );
@@ -94,5 +100,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.background,
+  },
+  headerContainer: {
+    paddingHorizontal: 6,
+    paddingBottom: 8,
+  },
+  headerTitle: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: Colors.dark,
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: Colors.gray,
+    marginTop: 4,
   },
 });

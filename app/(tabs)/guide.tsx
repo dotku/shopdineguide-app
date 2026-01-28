@@ -8,11 +8,11 @@ import { BusinessList } from '@/src/components/BusinessList';
 import { Colors } from '@/src/constants/colors';
 import { database } from '@/src/services/database';
 import { useAppStore } from '@/src/hooks/useAppStore';
-import type { Business, ContentFilter } from '@/src/types/business';
+import type { Business } from '@/src/types/business';
 
 const PAGE_SIZE = 20;
 
-export default function DiscoverScreen() {
+export default function GuideScreen() {
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
@@ -25,7 +25,7 @@ export default function DiscoverScreen() {
       setLoading(true);
       try {
         const results = await database.getBusinessesBySection(
-          undefined,
+          'guide',
           activeFilter,
           activeCity || undefined,
           activeNeighborhood || undefined,
@@ -40,7 +40,7 @@ export default function DiscoverScreen() {
         }
         setHasMore(results.length === PAGE_SIZE);
       } catch (err) {
-        console.error('Failed to load businesses:', err);
+        console.error('Failed to load guide businesses:', err);
       } finally {
         setLoading(false);
       }
@@ -84,7 +84,7 @@ export default function DiscoverScreen() {
         onLoadMore={loadMore}
         hasMore={hasMore}
         ListHeaderComponent={header}
-        emptyMessage="No businesses found"
+        emptyMessage="No services found"
       />
     </SafeAreaView>
   );

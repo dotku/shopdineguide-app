@@ -1,59 +1,60 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
+import { useEffect, useState } from 'react';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/components/useColorScheme';
+import { StatusBar } from 'expo-status-bar';
+import { database } from '@/src/services/database';
+import { useAppStore } from '@/src/hooks/useAppStore';
 
 export {
-  // Catch any errors thrown by the Layout component.
   ErrorBoundary,
 } from 'expo-router';
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
   initialRouteName: '(tabs)',
 };
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    ...FontAwesome.font,
-  });
-
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
-  useEffect(() => {
-    if (error) throw error;
-  }, [error]);
+  const [isReady, setIsReady] = useState(false);
+  const setDbReady = useAppStore((s) => s.setDbReady);
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
+    async function init() {
+      try {
+        await database.getDb();
+
+        const seedData = require('@/assets/data/businesses.json');
+        const count = await database.seedFromBundle(seedData);
+        console.log(`Database: ${count} businesses`);
+
+        setDbReady(true);
+      } catch (error) {
+        console.error('Init error:', error);
+      } finally {
+        setIsReady(true);
+        await SplashScreen.hideAsync();
+      }
     }
-  }, [loaded]);
+    init();
+  }, []);
 
-  if (!loaded) {
-    return null;
-  }
-
-  return <RootLayoutNav />;
-}
-
-function RootLayoutNav() {
-  const colorScheme = useColorScheme();
+  if (!isReady) return null;
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <>
+      <StatusBar style="dark" />
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+        <Stack.Screen
+          name="business/[id]"
+          options={{ headerShown: false, presentation: 'card' }}
+        />
+        <Stack.Screen
+          name="search"
+          options={{ headerShown: false, presentation: 'modal' }}
+        />
       </Stack>
-    </ThemeProvider>
+    </>
   );
 }
