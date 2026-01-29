@@ -15,7 +15,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.shopdineguide.app"
+      "bundleIdentifier": "com.shopdineguide.app",
+      "appleTeamId": "5Z3S4PSBVE",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +41,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "812abed1-25ea-4d53-8f6c-91760ed482d9"
+      }
+    },
+    "owner": "jytech-llc"
   }
 }
