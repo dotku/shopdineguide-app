@@ -77,15 +77,20 @@ function getImageSource($el: cheerio.Cheerio<any>): string {
 function isGenericImage(src: string): boolean {
   if (!src) return true;
   const genericPatterns = [
-    'poster0.jpg',    // generic placeholder on every listing card
-    'logo3.png',      // site footer logo
-    'logo4.png',      // site footer logo
-    'histats.com',    // tracking pixel
+    'poster0.jpg',
+    'logo3.png',
+    'logo4.png',
+    'histats.com',
     'favicon',
-    'bk11.jpg',       // site-wide background
+    'bk11.jpg',
+    'bk1.jpg',
+    'qrcode/0000',
+    '/icon/',
+    '/banner/',
   ];
-  return genericPatterns.some((p) => src.includes(p));
+  return genericPatterns.some((p) => src.toLowerCase().includes(p));
 }
+
 
 // Skip generic names from nav/page chrome
 function isGenericName(name: string): boolean {
@@ -205,7 +210,7 @@ function parseListingPage(html: string, section: string): ListingItem[] {
   return items;
 }
 
-function parseDetailPage(html: string, id: number): Partial<ScrapedBusiness> {
+function parseDetailPage(html: string, id: number, isAd: boolean = false): Partial<ScrapedBusiness> {
   const $ = cheerio.load(html);
   const result: Partial<ScrapedBusiness> = { id };
 
@@ -260,70 +265,100 @@ function parseDetailPage(html: string, id: number): Partial<ScrapedBusiness> {
     }
   });
 
-  // Google Maps link
-  $('a[href*="google.com/maps"], a[href*="goo.gl/maps"], a[href*="maps.google"]').each(
-    (_, el) => {
-      if (!result.googleMapsUrl) {
-        result.googleMapsUrl = $(el).attr('href') || undefined;
-      }
-    }
-  );
-
-  // Address: extract from maps link text
-  $('a[href*="goo.gl/maps"], a[href*="google.com/maps"]').each((_, el) => {
+    // Google Maps link
+  $('a[href*="maps.app.goo.gl"], a[href*="google.com/maps"], a[href*="maps.google"]').each((_, el) => {
     const text = $(el).text().trim();
-    if (text && text.length > 5 && text.length < 200 && !result.address) {
+    
+    if (text && 
+        /\b9\d{4}\b/.test(text) && 
+        text.length > 10 && 
+        text.length < 200 &&
+        text !== 'Location' &&
+        !result.address) {
       result.address = text;
+      console.log(`  📍 Found address: ${text}`);
+      return false; // 找到就停止
     }
   });
 
-  // Parse city/neighborhood from address
-  if (result.address) {
-    // Check for SF neighborhoods
-    const sfNeighborhoods = [
-      'Chinatown', 'Fishermans Wharf', 'Hayes Valley',
-      'Mission', 'Richmond', 'Silver', 'Sunset',
-    ];
-    for (const n of sfNeighborhoods) {
-      if (result.address.toLowerCase().includes(n.toLowerCase())) {
-        result.neighborhood = n;
-        break;
+  if (!result.address) {
+    $('p, div, span').each((_, el) => {
+      const text = $(el).text().trim();
+      
+      if (/\d+\s+[A-Za-z\s]+,\s*(?:San Francisco|Daly City|San Mateo)[^,]*\b9\d{4}\b/.test(text)) {
+        result.address = text;
+        console.log(`  📍 Found address in text: ${text}`);
+        return false;
       }
-    }
-    // Check cities - order matters (South SF before SF)
-    if (result.address.includes('South San Francisco')) {
-      result.city = 'South San Francisco';
-    } else if (result.address.includes('San Francisco')) {
-      result.city = 'San Francisco';
-    } else if (result.address.includes('San Mateo')) {
-      result.city = 'San Mateo';
-    } else if (result.address.includes('Daly City')) {
-      result.city = 'Daly City';
-    } else if (result.address.includes('Millbrae')) {
-      result.city = 'Millbrae';
-    } else if (result.address.includes('Napa')) {
-      result.city = 'Napa';
-    }
-    result.state = 'CA';
-    const zipMatch = result.address.match(/\b(9\d{4})\b/);
-    if (zipMatch) result.zip = zipMatch[1];
+    });
   }
 
-  // Social media links
-  $('a[href*="facebook.com"]').each((_, el) => {
-    if (!result.facebookUrl) result.facebookUrl = $(el).attr('href');
-  });
-  $('a[href*="instagram.com"]').each((_, el) => {
-    if (!result.instagramUrl) result.instagramUrl = $(el).attr('href');
-  });
-  $('a[href*="yelp.com"]').each((_, el) => {
-    if (!result.yelpUrl) result.yelpUrl = $(el).attr('href');
-  });
+  // 提取邮编和 neighborhood
+  if (result.address && result.address !== 'Location') {
+    const zipMatch = result.address.match(/\b(9\d{4})\b/);
+    if (zipMatch) {
+      result.zip = zipMatch[1];
+      
+      // 邮编到 neighborhood 映射
+      const zipToNeighborhood: Record<string, string> = {
+        '94102': 'Tenderloin',
+        '94103': 'SOMA',
+        '94104': 'Financial District',
+        '94105': 'SOMA',
+        '94107': 'Potrero Hill',
+        '94108': 'Chinatown',
+        '94109': 'Nob Hill',
+        '94110': 'Mission',
+        '94111': 'Chinatown',
+        '94112': 'Excelsior',
+        '94114': 'Castro',
+        '94115': 'Western Addition',
+        '94116': 'Sunset',
+        '94117': 'Haight-Ashbury',
+        '94118': 'Richmond',
+        '94121': 'Richmond',
+        '94122': 'Sunset',
+        '94123': 'Marina',
+        '94124': 'Bayview',
+        '94127': 'West Portal',
+        '94129': 'Presidio',
+        '94130': 'Treasure Island',
+        '94131': 'Glen Park',
+        '94132': 'Sunset',
+        '94133': 'North Beach',
+        '94134': 'Visitacion Valley',
+        '94158': 'Mission Bay',
+      };
+      
+      if (zipToNeighborhood[zipMatch[1]]) {
+        result.neighborhood = zipToNeighborhood[zipMatch[1]];
+        console.log(`  🏘️  Neighborhood: ${result.neighborhood} (from zip ${zipMatch[1]})`);
+      }
+    }
+    
+    // 提取城市
+    const addr = result.address.toLowerCase();
+    if (addr.includes('south san francisco')) {
+      result.city = 'South San Francisco';
+    } else if (addr.includes('san francisco')) {
+      result.city = 'San Francisco';
+    } else if (addr.includes('san mateo')) {
+      result.city = 'San Mateo';
+    } else if (addr.includes('daly city')) {
+      result.city = 'Daly City';
+    } else if (addr.includes('millbrae')) {
+      result.city = 'Millbrae';
+    }
+    
+    result.state = 'CA';
+  } else {
+    result.address = undefined;
+  }
 
-  // === IMAGES ===
+  // === IMAGES - 超严格版本 ===
   const galleryUrls: string[] = [];
 
-  // Business-specific logo (in images/logo/ directory, NOT logo3.png/logo4.png)
+  // 1. 提取 Logo
   $('img').each((_, img) => {
     const src = getImageSource($(img));
     if (src.includes('logo/') && !isGenericImage(src) && !result.logoUrl) {
@@ -331,42 +366,64 @@ function parseDetailPage(html: string, id: number): Partial<ScrapedBusiness> {
     }
   });
 
-  // Gallery/poster images (in images/poster/ or images/adposter/ directory)
+  // 2. 提取商户的所有可能代码
+  const businessCodes: string[] = [];
+
+  // 从 logo 提取代码
+  if (result.logoUrl) {
+    const logoMatch = result.logoUrl.match(/logo\/([^.\/]+?)(?:_logo)?\.(?:png|jpg|jpeg)/i);
+    if (logoMatch) {
+      businessCodes.push(logoMatch[1].toLowerCase());
+    }
+  }
+
+  // 如果是广告商户，添加 ad{id} 格式
+  if (isAd) {
+    businessCodes.push(`ad${id}`);
+  }
+
+  console.log(`  🏷️  Business codes for ID ${id}:`, businessCodes);
+
+  // 3. 只抓取严格匹配的图片
   $('img').each((_, img) => {
     const src = getImageSource($(img));
     if (!src || isGenericImage(src)) return;
 
-    if (src.includes('poster/') || src.includes('adposter/')) {
-      const resolved = resolveUrl(src);
-      if (!galleryUrls.includes(resolved)) {
-        galleryUrls.push(resolved);
+    if (src.includes('/poster/') || src.includes('/adposter/')) {
+      const filename = src.split('/').pop()?.toLowerCase() || '';
+      
+      // 排除通用图片
+      if (filename.includes('poster0')) return;
+      
+      let matches = false;
+      
+      // 对每个商户代码进行严格匹配
+      for (const code of businessCodes) {
+        // 文件名必须以商户代码开头
+        // ad56_xxx.jpeg ✅
+        // dc15-1.jpg ❌ (不是 ad56 开头)
+        const regex = new RegExp(`^${code}[_-]`, 'i');
+        if (regex.test(filename)) {
+          matches = true;
+          break;
+        }
+      }
+      
+      if (matches) {
+        const resolved = resolveUrl(src);
+        if (!galleryUrls.includes(resolved)) {
+          galleryUrls.push(resolved);
+        }
+      } else {
+        // 调试：记录被排除的图片
+        // console.log(`  ❌ Excluded: ${filename}`);
       }
     }
   });
 
-  // Also look for any other content images that aren't site chrome
-  $('img').each((_, img) => {
-    const src = getImageSource($(img));
-    if (
-      !src ||
-      isGenericImage(src) ||
-      src.includes('logo') ||
-      src.includes('qrcode') ||
-      src.includes('bk') ||
-      src.includes('icon')
-    )
-      return;
+  result.galleryUrls = galleryUrls.slice(0, 12); // 最多 12 张
 
-    // Include upload images and other content images
-    if (src.includes('upload') || src.includes('photo') || src.includes('image')) {
-      const resolved = resolveUrl(src);
-      if (!galleryUrls.includes(resolved)) {
-        galleryUrls.push(resolved);
-      }
-    }
-  });
-
-  result.galleryUrls = galleryUrls;
+  console.log(`  📸 Found ${result.galleryUrls.length} matching images`);
 
   // Banner/background image
   $('img[src*="bk"], img[data-original*="bk"], img[data-src*="bk"], img[data-lazy*="bk"]').each((_, img) => {
@@ -472,7 +529,7 @@ async function main() {
         : `${BASE_URL}/showpon.php?id=${listing.id}`;
 
       const html = await fetchPage(url);
-      const detail = parseDetailPage(html, listing.id);
+      const detail = parseDetailPage(html, listing.id, listing.isAd);
 
       // Determine best name: prefer detail page h2, fallback to listing name
       let name = detail.name || listing.name;
@@ -545,7 +602,7 @@ async function main() {
 
   // Step 3: Write output
   console.log('\nStep 3: Writing output...');
-  const outputDir = path.join(__dirname, '..', 'assets', 'data');
+  const outputDir = path.join(process.cwd(), 'assets', 'data');
   fs.mkdirSync(outputDir, { recursive: true });
 
   const output = {
@@ -571,6 +628,13 @@ async function main() {
   console.log(`With names: ${withNames}`);
   console.log(`With address: ${withAddress}`);
   console.log(`With phone: ${withPhone}`);
+  console.log('With neighborhood:', businesses.filter(b => b.neighborhood).length);
+  console.log('With isHot:', businesses.filter(b => b.isHot).length);
+  console.log('With isFree:', businesses.filter(b => b.isFree).length);
+  console.log('Neighborhoods:', [...new Set(businesses.map(b => b.neighborhood).filter(Boolean))]);
+  const avgGallery = businesses.reduce((sum, b) => sum + (b.galleryUrls?.length || 0), 0) / businesses.length;
+  console.log('Average gallery images per business:', avgGallery.toFixed(1));
+  console.log('Max gallery images:', Math.max(...businesses.map(b => b.galleryUrls?.length || 0)));
   console.log(`\nWrote to assets/data/businesses.json`);
 }
 

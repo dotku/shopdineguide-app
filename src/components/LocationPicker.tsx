@@ -1,8 +1,9 @@
 import { ScrollView, Pressable, Text, View, StyleSheet } from 'react-native';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { Colors } from '../constants/colors';
 import { LOCATIONS } from '../constants/locations';
+import { database } from '../services/database';
 
 interface Props {
   activeCity: string | null;
@@ -18,9 +19,42 @@ export function LocationPicker({
   onNeighborhoodChange,
 }: Props) {
   const [expanded, setExpanded] = useState(false);
+  const [availableNeighborhoods, setAvailableNeighborhoods] = useState<string[]>([]);
+
+  // 动态加载该城市的 neighborhoods
+  useEffect(() => {
+    loadNeighborhoods();
+  }, [activeCity]);
+
+  const loadNeighborhoods = async () => {
+    if (!activeCity) {
+      setAvailableNeighborhoods([]);
+      return;
+    }
+
+    try {
+      // 获取该城市的所有商户
+      const businesses = await database.getBusinessesByCity(activeCity, 1000);
+      
+      // 提取唯一的 neighborhoods
+      const hoods = new Set(
+        businesses
+          .filter(b => b.neighborhood)
+          .map(b => b.neighborhood!)
+      );
+      
+      const sorted = Array.from(hoods).sort();
+      setAvailableNeighborhoods(sorted);
+      
+      console.log(`📍 ${activeCity}: ${sorted.length} neighborhoods`, sorted);
+    } catch (error) {
+      console.error('Load neighborhoods error:', error);
+      setAvailableNeighborhoods([]);
+    }
+  };
 
   const selectedCity = LOCATIONS.find((c) => c.name === activeCity);
-  const hasNeighborhoods = selectedCity?.neighborhoods && selectedCity.neighborhoods.length > 0;
+  const hasNeighborhoods = availableNeighborhoods.length > 0; // 改用动态数据
 
   return (
     <View style={styles.container}>
@@ -62,7 +96,8 @@ export function LocationPicker({
               <Text style={[styles.chipText, isActive && styles.chipTextActive]}>
                 {city.name}
               </Text>
-              {city.neighborhoods && city.neighborhoods.length > 0 && isActive ? (
+              {/* 只有当真的有 neighborhoods 时才显示箭头 */}
+              {isActive && availableNeighborhoods.length > 0 ? (
                 <Ionicons name="chevron-down" size={14} color={Colors.white} />
               ) : null}
             </Pressable>
@@ -70,6 +105,7 @@ export function LocationPicker({
         })}
       </ScrollView>
 
+      {/* 只在有动态数据时显示 neighborhood 筛选器 */}
       {hasNeighborhoods && activeCity ? (
         <ScrollView
           horizontal
@@ -86,16 +122,17 @@ export function LocationPicker({
               All {activeCity}
             </Text>
           </Pressable>
-          {selectedCity!.neighborhoods!.map((nb) => {
-            const isActive = activeNeighborhood === nb.name;
+          {/* 使用动态加载的 neighborhoods */}
+          {availableNeighborhoods.map((hood) => {
+            const isActive = activeNeighborhood === hood;
             return (
               <Pressable
-                key={nb.slug}
+                key={hood}
                 style={[styles.smallChip, isActive && styles.smallChipActive]}
-                onPress={() => onNeighborhoodChange(isActive ? null : nb.name)}
+                onPress={() => onNeighborhoodChange(isActive ? null : hood)}
               >
                 <Text style={[styles.smallChipText, isActive && styles.smallChipTextActive]}>
-                  {nb.name}
+                  {hood}
                 </Text>
               </Pressable>
             );

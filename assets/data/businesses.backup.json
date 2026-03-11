@@ -1472,7 +1472,7 @@
       "fetchedAt": "2026-03-03T03:20:55.396Z"
     },
     {
-      "id": 1000,
+      "id": 291,
       "name": "Symbian Construction",
       "section": "shop",
       "state": "CA",
@@ -1536,7 +1536,7 @@
       "fetchedAt": "2026-03-03T03:20:56.560Z"
     },
     {
-      "id": 1001,
+      "id": 263,
       "name": "Sophia's Choice Gift Shop",
       "section": "shop",
       "address": "425 Grant Ave, San Francisco, CA 94108",
@@ -1623,7 +1623,7 @@
       "fetchedAt": "2026-03-03T03:20:58.104Z"
     },
     {
-      "id": 1002,
+      "id": 290,
       "name": "Powell Trading Co",
       "section": "shop",
       "address": "837 Grant Ave, San Francisco, CA 94108",
@@ -1781,7 +1781,7 @@
       "fetchedAt": "2026-03-03T03:21:01.228Z"
     },
     {
-      "id": 1003,
+      "id": 288,
       "name": "Sleep & Dream",
       "section": "shop",
       "state": "CA",
@@ -1834,7 +1834,7 @@
       "fetchedAt": "2026-03-03T03:21:02.400Z"
     },
     {
-      "id": 1004,
+      "id": 302,
       "name": "World of magnets",
       "section": "shop",
       "address": "815 Grant Ave, San Francisco, CA 94108",
@@ -2353,7 +2353,7 @@
       "fetchedAt": "2026-03-03T03:21:11.546Z"
     },
     {
-      "id": 1005,
+      "id": 285,
       "name": "Jade Bazaar",
       "section": "shop",
       "address": "480 Grant Ave San Francisco, CA 94108",
@@ -2482,7 +2482,7 @@
       "fetchedAt": "2026-03-03T03:21:13.467Z"
     },
     {
-      "id": 1006,
+      "id": 232,
       "name": "Golden Gate Fortune Cookie Factory",
       "section": "shop",
       "address": "56 Ross Alley, San Francisco, CA 94108",
@@ -2581,7 +2581,7 @@
       "fetchedAt": "2026-03-03T03:21:15.434Z"
     },
     {
-      "id": 1007,
+      "id": 259,
       "name": "Old Shanghai",
       "section": "shop",
       "address": "645 Grant Ave, San Francisco, CA 94108",
@@ -3032,7 +3032,7 @@
       "fetchedAt": "2026-03-03T03:21:24.232Z"
     },
     {
-      "id": 1008,
+      "id": 333,
       "name": "House Of Fusion",
       "section": "dine",
       "address": "6288 Mission St, Daly City, CA 94014",
@@ -3085,7 +3085,7 @@
       "fetchedAt": "2026-03-03T03:21:24.990Z"
     },
     {
-      "id": 1009,
+      "id": 65,
       "name": "Chinatown Restaurant",
       "section": "dine",
       "state": "CA",
@@ -3359,7 +3359,7 @@
       "fetchedAt": "2026-03-03T03:21:29.517Z"
     },
     {
-      "id": 1010,
+      "id": 207,
       "name": "Hotaru Restaurant",
       "section": "dine",
       "state": "CA",
@@ -3462,7 +3462,7 @@
       "fetchedAt": "2026-03-03T03:21:31.058Z"
     },
     {
-      "id": 1011,
+      "id": 260,
       "name": "Eggy's Neighborhood Kitchen",
       "section": "dine",
       "state": "CA",
@@ -3494,7 +3494,7 @@
       "fetchedAt": "2026-03-03T03:21:31.869Z"
     },
     {
-      "id": 1012,
+      "id": 296,
       "name": "Hawaiian Poke",
       "section": "dine",
       "state": "CA",
@@ -3532,7 +3532,7 @@
       "fetchedAt": "2026-03-03T03:21:32.635Z"
     },
     {
-      "id": 1013,
+      "id": 330,
       "name": "MOD Pizza",
       "section": "dine",
       "state": "CA",
@@ -3633,7 +3633,7 @@
       "fetchedAt": "2026-03-03T03:21:34.538Z"
     },
     {
-      "id": 1014,
+      "id": 140,
       "name": "愛麗月餅",
       "section": "dine",
       "state": "CA",
@@ -4095,7 +4095,7 @@
       "fetchedAt": "2026-03-03T03:21:44.269Z"
     },
     {
-      "id": 1015,
+      "id": 315,
       "name": "Golden Gate Bakery",
       "section": "dine",
       "address": "1029 Grant Ave, San Francisco, CA 94133",
@@ -4178,7 +4178,7 @@
       "fetchedAt": "2026-03-03T03:21:45.419Z"
     },
     {
-      "id": 1016,
+      "id": 289,
       "name": "Slice Pizza & Krunchy Chicken",
       "section": "dine",
       "state": "CA",
@@ -4257,7 +4257,7 @@
       "fetchedAt": "2026-03-03T03:21:46.531Z"
     },
     {
-      "id": 1017,
+      "id": 43,
       "name": "鯉魚門 大龍蝦撈喜(豪)門宴",
       "section": "dine",
       "state": "CA",
@@ -4300,7 +4300,7 @@
       "fetchedAt": "2026-03-03T03:21:47.304Z"
     },
     {
-      "id": 1018,
+      "id": 136,
       "name": "香港東海【粿蒸粽】",
       "section": "dine",
       "state": "CA",
@@ -4450,7 +4450,7 @@
       "fetchedAt": "2026-03-03T03:21:50.084Z"
     },
     {
-      "id": 1019,
+      "id": 97,
       "name": "Harborview 凯悦滙",
       "section": "dine",
       "state": "CA",
@@ -4748,7 +4748,7 @@
       "fetchedAt": "2026-03-03T03:21:55.039Z"
     },
     {
-      "id": 1020,
+      "id": 266,
       "name": "Yee's Restaurant",
       "section": "dine",
       "address": "1131 Grant Ave, San Francisco, CA 94133",
@@ -4850,7 +4850,7 @@
       "fetchedAt": "2026-03-03T03:21:56.570Z"
     },
     {
-      "id": 1021,
+      "id": 261,
       "name": "The Quetzal",
       "section": "dine",
       "state": "CA",
@@ -5118,7 +5118,7 @@
       "fetchedAt": "2026-03-03T03:22:01.554Z"
     },
     {
-      "id": 1022,
+      "id": 53,
       "name": "The kitchen",
       "section": "dine",
       "state": "CA",
@@ -5299,7 +5299,7 @@
       "fetchedAt": "2026-03-03T03:22:04.628Z"
     },
     {
-      "id": 1023,
+      "id": 111,
       "name": "Afterwork Bar",
       "section": "dine",
       "state": "CA",
@@ -5324,7 +5324,7 @@
       "fetchedAt": "2026-03-03T03:22:05.012Z"
     },
     {
-      "id": 1024,
+      "id": 295,
       "name": "Yafa Hummus",
       "section": "dine",
       "state": "CA",
@@ -5467,7 +5467,7 @@
       "fetchedAt": "2026-03-03T03:22:08.041Z"
     },
     {
-      "id": 1025,
+      "id": 165,
       "name": "Breakfast at Tiffany's",
       "section": "dine",
       "state": "CA",
@@ -5553,7 +5553,7 @@
       "fetchedAt": "2026-03-03T03:22:09.577Z"
     },
     {
-      "id": 1026,
+      "id": 60,
       "name": "Broadway Dim Sum Café",
       "section": "dine",
       "state": "CA",
@@ -5593,7 +5593,7 @@
       "fetchedAt": "2026-03-03T03:22:10.315Z"
     },
     {
-      "id": 1027,
+      "id": 139,
       "name": "Ritual Coffee Roasters",
       "section": "dine",
       "state": "CA",
@@ -5611,7 +5611,7 @@
       "fetchedAt": "2026-03-03T03:22:10.698Z"
     },
     {
-      "id": 1028,
+      "id": 195,
       "name": "OLD Mandarin",
       "section": "dine",
       "address": "3132 Vicente St, San Francisco, CA 94116",
@@ -5658,7 +5658,7 @@
       "fetchedAt": "2026-03-03T03:22:11.455Z"
     },
     {
-      "id": 1029,
+      "id": 84,
       "name": "神奇炒雪糕",
       "section": "dine",
       "state": "CA",
@@ -5698,7 +5698,7 @@
       "fetchedAt": "2026-03-03T03:22:12.241Z"
     },
     {
-      "id": 1030,
+      "id": 57,
       "name": "Kaoru Sushi",
       "section": "dine",
       "state": "CA",
@@ -5782,7 +5782,7 @@
       "fetchedAt": "2026-03-03T03:22:13.748Z"
     },
     {
-      "id": 1031,
+      "id": 58,
       "name": "萬家百搭湯底系列",
       "section": "dine",
       "state": "CA",
@@ -5821,7 +5821,7 @@
       "fetchedAt": "2026-03-03T03:22:14.557Z"
     },
     {
-      "id": 1032,
+      "id": 275,
       "name": "Niche's Pizzeria",
       "section": "dine",
       "state": "CA",
@@ -5938,7 +5938,7 @@
       "fetchedAt": "2026-03-03T03:22:16.510Z"
     },
     {
-      "id": 1033,
+      "id": 61,
       "name": "Cafe Broadway",
       "section": "dine",
       "state": "CA",
@@ -6038,7 +6038,7 @@
       "fetchedAt": "2026-03-03T03:22:18.896Z"
     },
     {
-      "id": 1034,
+      "id": 219,
       "name": "Five Rivers Indian Cuisine",
       "section": "dine",
       "state": "CA",
@@ -6113,7 +6113,7 @@
       "fetchedAt": "2026-03-03T03:22:20.516Z"
     },
     {
-      "id": 1035,
+      "id": 226,
       "name": "阿拉上海",
       "section": "dine",
       "state": "CA",
@@ -6170,7 +6170,7 @@
       "fetchedAt": "2026-03-03T03:22:21.663Z"
     },
     {
-      "id": 1036,
+      "id": 51,
       "name": "Royal Feast Restaurant",
       "section": "dine",
       "state": "CA",
@@ -6242,7 +6242,7 @@
       "fetchedAt": "2026-03-03T03:22:22.781Z"
     },
     {
-      "id": 1037,
+      "id": 168,
       "name": "Imperial Garden Seafood Restaurant",
       "section": "dine",
       "state": "CA",
@@ -6433,7 +6433,7 @@
       "fetchedAt": "2026-03-03T03:22:26.704Z"
     },
     {
-      "id": 1038,
+      "id": 340,
       "name": "Celia's",
       "section": "dine",
       "state": "CA",
@@ -6479,7 +6479,7 @@
       "fetchedAt": "2026-03-03T03:22:27.453Z"
     },
     {
-      "id": 1039,
+      "id": 284,
       "name": "Red Rooster",
       "section": "dine",
       "state": "CA",
@@ -6539,7 +6539,7 @@
       "fetchedAt": "2026-03-03T03:22:28.669Z"
     },
     {
-      "id": 1040,
+      "id": 361,
       "name": "Taishan Cuisine",
       "section": "dine",
       "address": "781 Broadway, San Francisco, CA 94133",
@@ -6605,7 +6605,7 @@
       "fetchedAt": "2026-03-03T03:22:29.817Z"
     },
     {
-      "id": 1041,
+      "id": 141,
       "name": "Stonemill Matcha",
       "section": "dine",
       "state": "CA",
@@ -6624,7 +6624,7 @@
       "fetchedAt": "2026-03-03T03:22:30.194Z"
     },
     {
-      "id": 1042,
+      "id": 104,
       "name": "Dreyer's Grand Ice Cream",
       "section": "dine",
       "state": "CA",
@@ -6654,7 +6654,7 @@
       "fetchedAt": "2026-03-03T03:22:30.569Z"
     },
     {
-      "id": 1043,
+      "id": 346,
       "name": "Cuppa Yo",
       "section": "dine",
       "state": "CA",
@@ -6741,7 +6741,7 @@
       "fetchedAt": "2026-03-03T03:22:32.179Z"
     },
     {
-      "id": 1044,
+      "id": 101,
       "name": "Boudin Bakery",
       "section": "dine",
       "state": "CA",
@@ -6770,7 +6770,7 @@
       "fetchedAt": "2026-03-03T03:22:32.555Z"
     },
     {
-      "id": 1045,
+      "id": 343,
       "name": "New York Pizza",
       "section": "dine",
       "state": "CA",
@@ -6826,7 +6826,7 @@
       "fetchedAt": "2026-03-03T03:22:33.748Z"
     },
     {
-      "id": 1046,
+      "id": 135,
       "name": "Dancing Yak Restaurant & Bar",
       "section": "dine",
       "state": "CA",
@@ -6865,7 +6865,7 @@
       "fetchedAt": "2026-03-03T03:22:34.496Z"
     },
     {
-      "id": 1047,
+      "id": 321,
       "name": "Hinata Sushi Kitchen",
       "section": "dine",
       "address": "1071 B St 2nd Floor, Hayward, CA 94541",
@@ -6967,7 +6967,7 @@
       "fetchedAt": "2026-03-03T03:22:36.799Z"
     },
     {
-      "id": 1048,
+      "id": 374,
       "name": "敦城順豐迎春盆菜",
       "section": "dine",
       "state": "CA",
@@ -7005,7 +7005,7 @@
       "fetchedAt": "2026-03-03T03:22:37.579Z"
     },
     {
-      "id": 1049,
+      "id": 78,
       "name": "洪記麵家 華埠老字號",
       "section": "dine",
       "state": "CA",
@@ -7038,7 +7038,7 @@
       "fetchedAt": "2026-03-03T03:22:38.394Z"
     },
     {
-      "id": 1050,
+      "id": 87,
       "name": "景城 City View Restaurant",
       "section": "dine",
       "state": "CA",
@@ -7055,7 +7055,7 @@
       "fetchedAt": "2026-03-03T03:22:38.796Z"
     },
     {
-      "id": 1051,
+      "id": 179,
       "name": "Fiery Hot Pot and Grill",
       "section": "dine",
       "state": "CA",
@@ -7256,7 +7256,7 @@
       "fetchedAt": "2026-03-03T03:22:42.581Z"
     },
     {
-      "id": 1052,
+      "id": 280,
       "name": "Pho Saigon II",
       "section": "dine",
       "state": "CA",
@@ -7310,7 +7310,7 @@
       "fetchedAt": "2026-03-03T03:22:43.767Z"
     },
     {
-      "id": 1053,
+      "id": 323,
       "name": "Our Branch Store",
       "section": "dine",
       "state": "CA",
@@ -7352,7 +7352,7 @@
       "fetchedAt": "2026-03-03T03:22:44.546Z"
     },
     {
-      "id": 1054,
+      "id": 326,
       "name": "New Thai Eatery & Grill",
       "section": "dine",
       "state": "CA",
@@ -7369,7 +7369,7 @@
       "fetchedAt": "2026-03-03T03:22:44.951Z"
     },
     {
-      "id": 1055,
+      "id": 86,
       "name": "景城 港式點心 唐人街老字號茶樓",
       "section": "dine",
       "state": "CA",
@@ -7386,7 +7386,7 @@
       "fetchedAt": "2026-03-03T03:22:45.373Z"
     },
     {
-      "id": 1056,
+      "id": 306,
       "name": "ICICLES",
       "section": "dine",
       "address": "829 Mission St, San Francisco, CA 94103",
@@ -7417,7 +7417,7 @@
       "fetchedAt": "2026-03-03T03:22:45.743Z"
     },
     {
-      "id": 1057,
+      "id": 257,
       "name": "Craft Pizzeria",
       "section": "dine",
       "state": "CA",
@@ -7449,7 +7449,7 @@
       "fetchedAt": "2026-03-03T03:22:46.570Z"
     },
     {
-      "id": 1058,
+      "id": 163,
       "name": "Le Soleil",
       "section": "dine",
       "state": "CA",
@@ -7518,7 +7518,7 @@
       "fetchedAt": "2026-03-03T03:22:47.684Z"
     },
     {
-      "id": 1059,
+      "id": 132,
       "name": "Our Branch Store",
       "section": "dine",
       "address": "2048 Broadway, Redwood City, CA 94063",
@@ -7551,7 +7551,7 @@
       "fetchedAt": "2026-03-03T03:22:48.054Z"
     },
     {
-      "id": 1060,
+      "id": 45,
       "name": "IPoh Garden",
       "section": "dine",
       "state": "CA",
@@ -7570,7 +7570,7 @@
       "fetchedAt": "2026-03-03T03:22:48.416Z"
     },
     {
-      "id": 1061,
+      "id": 166,
       "name": "Dim Sum Kitchen",
       "section": "dine",
       "state": "CA",
@@ -7609,7 +7609,7 @@
       "fetchedAt": "2026-03-03T03:22:49.190Z"
     },
     {
-      "id": 1062,
+      "id": 90,
       "name": "R&G Lounge",
       "section": "dine",
       "state": "CA",
@@ -7670,7 +7670,7 @@
       "fetchedAt": "2026-03-03T03:22:49.970Z"
     },
     {
-      "id": 1063,
+      "id": 23,
       "name": "Kenzo Napa",
       "section": "dine",
       "state": "CA",
@@ -7728,7 +7728,7 @@
       "fetchedAt": "2026-03-03T03:22:51.110Z"
     },
     {
-      "id": 1064,
+      "id": 28,
       "name": "Napa General Store",
       "section": "dine",
       "state": "CA",
@@ -7772,7 +7772,7 @@
       "fetchedAt": "2026-03-03T03:22:51.862Z"
     },
     {
-      "id": 1065,
+      "id": 274,
       "name": "Neptune's",
       "section": "dine",
       "state": "CA",
@@ -7910,7 +7910,7 @@
       "fetchedAt": "2026-03-03T03:22:54.115Z"
     },
     {
-      "id": 1066,
+      "id": 283,
       "name": "Rayo's Pizza",
       "section": "dine",
       "state": "CA",
@@ -7999,7 +7999,7 @@
       "fetchedAt": "2026-03-03T03:22:55.669Z"
     },
     {
-      "id": 1067,
+      "id": 172,
       "name": "Spiral Sushi 30%off優惠卷",
       "section": "dine",
       "state": "CA",
@@ -8109,7 +8109,7 @@
       "fetchedAt": "2026-03-03T03:22:57.592Z"
     },
     {
-      "id": 1068,
+      "id": 82,
       "name": "唐人街老字號 德興燒臘",
       "section": "dine",
       "state": "CA",
@@ -8165,7 +8165,7 @@
       "fetchedAt": "2026-03-03T03:22:58.758Z"
     },
     {
-      "id": 1069,
+      "id": 269,
       "name": "Kitaro Japanese Restaurant",
       "section": "dine",
       "state": "CA",
@@ -8267,7 +8267,7 @@
       "fetchedAt": "2026-03-03T03:23:00.610Z"
     },
     {
-      "id": 1070,
+      "id": 299,
       "name": "The Vine and Spirits",
       "section": "dine",
       "state": "CA",
@@ -8282,7 +8282,7 @@
       "fetchedAt": "2026-03-03T03:23:01.012Z"
     },
     {
-      "id": 1071,
+      "id": 83,
       "name": "頭頓 越南餐廳 華垾老字號",
       "section": "dine",
       "state": "CA",
@@ -8351,7 +8351,7 @@
       "fetchedAt": "2026-03-03T03:23:02.159Z"
     },
     {
-      "id": 1072,
+      "id": 26,
       "name": "Little Summer at Napa Valley Marriott",
       "section": "dine",
       "state": "CA",
@@ -8433,7 +8433,7 @@
       "fetchedAt": "2026-03-03T03:23:03.691Z"
     },
     {
-      "id": 1073,
+      "id": 224,
       "name": "Tokie's Downtown",
       "section": "dine",
       "state": "CA",
@@ -8538,7 +8538,7 @@
       "fetchedAt": "2026-03-03T03:23:05.628Z"
     },
     {
-      "id": 1074,
+      "id": 49,
       "name": "9 Noodle House",
       "section": "dine",
       "address": "9 Hillcrest Blvd, Millbrae, CA 94030",
@@ -8598,7 +8598,7 @@
       "fetchedAt": "2026-03-03T03:23:06.779Z"
     },
     {
-      "id": 1075,
+      "id": 29,
       "name": "Napa Valley Bistro",
       "section": "dine",
       "state": "CA",
@@ -8667,7 +8667,7 @@
       "fetchedAt": "2026-03-03T03:23:07.934Z"
     },
     {
-      "id": 1076,
+      "id": 286,
       "name": "Round Table",
       "section": "dine",
       "state": "CA",
@@ -8719,7 +8719,7 @@
       "fetchedAt": "2026-03-03T03:23:08.708Z"
     },
     {
-      "id": 1077,
+      "id": 371,
       "name": "Gao Viet Kitchen",
       "section": "dine",
       "address": "1900 Irving St, San Francisco, CA 94122",
@@ -8750,7 +8750,7 @@
       "fetchedAt": "2026-03-03T03:23:09.086Z"
     },
     {
-      "id": 1078,
+      "id": 305,
       "name": "Daeho Kalbijim & Beef Soup",
       "section": "dine",
       "address": "1620 Post St, San Francisco, CA 94115",
@@ -8870,7 +8870,7 @@
       "fetchedAt": "2026-03-03T03:23:10.990Z"
     },
     {
-      "id": 1079,
+      "id": 99,
       "name": "留湘小聚 San Mateo",
       "section": "dine",
       "state": "CA",
@@ -8887,7 +8887,7 @@
       "fetchedAt": "2026-03-03T03:23:11.380Z"
     },
     {
-      "id": 1080,
+      "id": 85,
       "name": "神奇炒雪糕店",
       "section": "dine",
       "state": "CA",
@@ -8902,7 +8902,7 @@
       "fetchedAt": "2026-03-03T03:23:11.776Z"
     },
     {
-      "id": 1081,
+      "id": 329,
       "name": "劉一手 單人九宮格套餐",
       "section": "dine",
       "state": "CA",
@@ -8970,7 +8970,7 @@
       "fetchedAt": "2026-03-03T03:23:12.931Z"
     },
     {
-      "id": 1082,
+      "id": 96,
       "name": "金海灣海鮮酒家",
       "section": "dine",
       "state": "CA",
@@ -8985,7 +8985,7 @@
       "fetchedAt": "2026-03-03T03:23:13.326Z"
     },
     {
-      "id": 1083,
+      "id": 220,
       "name": "金味德兰洲牛肉面",
       "section": "dine",
       "state": "CA",
@@ -9000,7 +9000,7 @@
       "fetchedAt": "2026-03-03T03:23:13.707Z"
     },
     {
-      "id": 1084,
+      "id": 338,
       "name": "Outback Steakhouse",
       "section": "dine",
       "state": "CA",
@@ -9062,7 +9062,7 @@
       "fetchedAt": "2026-03-03T03:23:14.868Z"
     },
     {
-      "id": 1085,
+      "id": 256,
       "name": "Zhu’s Tea",
       "section": "dine",
       "address": "112 Waverly Pl San Francisco, CA 94108",
@@ -9089,7 +9089,7 @@
       "fetchedAt": "2026-03-03T03:23:15.244Z"
     },
     {
-      "id": 1086,
+      "id": 138,
       "name": "NapaSport SteakHouse",
       "section": "dine",
       "state": "CA",
@@ -9126,7 +9126,7 @@
       "fetchedAt": "2026-03-03T03:23:16.009Z"
     },
     {
-      "id": 1087,
+      "id": 258,
       "name": "Dairy Queen",
       "section": "dine",
       "state": "CA",
@@ -9143,7 +9143,7 @@
       "fetchedAt": "2026-03-03T03:23:16.404Z"
     },
     {
-      "id": 1088,
+      "id": 161,
       "name": "Tasty Pot",
       "section": "dine",
       "state": "CA",
@@ -9195,7 +9195,7 @@
       "fetchedAt": "2026-03-03T03:23:17.572Z"
     },
     {
-      "id": 1089,
+      "id": 341,
       "name": "Los Cuates Taqueria",
       "section": "dine",
       "state": "CA",
@@ -9364,7 +9364,7 @@
       "fetchedAt": "2026-03-03T03:23:20.216Z"
     },
     {
-      "id": 1090,
+      "id": 293,
       "name": "Vino Santo",
       "section": "dine",
       "state": "CA",
@@ -9379,7 +9379,7 @@
       "fetchedAt": "2026-03-03T03:23:20.609Z"
     },
     {
-      "id": 1091,
+      "id": 103,
       "name": "留湘 湖南菜馆",
       "section": "dine",
       "state": "CA",
@@ -9396,7 +9396,7 @@
       "fetchedAt": "2026-03-03T03:23:21.021Z"
     },
     {
-      "id": 1092,
+      "id": 69,
       "name": "Chinese restaurant dim sum",
       "section": "dine",
       "state": "CA",
@@ -9437,7 +9437,7 @@
       "fetchedAt": "2026-03-03T03:23:21.782Z"
     },
     {
-      "id": 1093,
+      "id": 27,
       "name": "Max’s",
       "section": "dine",
       "state": "CA",
@@ -9475,7 +9475,7 @@
       "fetchedAt": "2026-03-03T03:23:22.848Z"
     },
     {
-      "id": 1094,
+      "id": 94,
       "name": "金海灣海鮮酒家",
       "section": "dine",
       "state": "CA",
@@ -9511,7 +9511,7 @@
       "fetchedAt": "2026-03-03T03:23:23.622Z"
     },
     {
-      "id": 1095,
+      "id": 81,
       "name": "糖潮 華埠粵菜點心",
       "section": "dine",
       "state": "CA",
@@ -9621,7 +9621,7 @@
       "fetchedAt": "2026-03-03T03:23:25.546Z"
     },
     {
-      "id": 1096,
+      "id": 89,
       "name": "House Dim Sum",
       "section": "dine",
       "state": "CA",
@@ -9707,7 +9707,7 @@
       "fetchedAt": "2026-03-03T03:23:27.075Z"
     },
     {
-      "id": 1097,
+      "id": 48,
       "name": "Little Chengdu",
       "section": "dine",
       "state": "CA",
@@ -9758,7 +9758,7 @@
       "fetchedAt": "2026-03-03T03:23:27.855Z"
     },
     {
-      "id": 1098,
+      "id": 215,
       "name": "ROUND TABLE PIZZA MENLO PARK",
       "section": "dine",
       "state": "CA",
@@ -9775,7 +9775,7 @@
       "fetchedAt": "2026-03-03T03:23:28.266Z"
     },
     {
-      "id": 1099,
+      "id": 273,
       "name": "Mountain Mike's Pizza",
       "section": "dine",
       "state": "CA",
@@ -9790,7 +9790,7 @@
       "fetchedAt": "2026-03-03T03:23:28.673Z"
     },
     {
-      "id": 1100,
+      "id": 304,
       "name": "Frontier Spice",
       "section": "dine",
       "state": "CA",
@@ -9805,7 +9805,7 @@
       "fetchedAt": "2026-03-03T03:23:29.074Z"
     },
     {
-      "id": 1101,
+      "id": 46,
       "name": "Our Branch Store",
       "section": "dine",
       "state": "CA",
@@ -9843,7 +9843,7 @@
       "fetchedAt": "2026-03-03T03:23:29.828Z"
     },
     {
-      "id": 1102,
+      "id": 281,
       "name": "Pikaso",
       "section": "dine",
       "state": "CA",
@@ -9919,7 +9919,7 @@
       "fetchedAt": "2026-03-03T03:23:31.356Z"
     },
     {
-      "id": 1103,
+      "id": 64,
       "name": "China Live",
       "section": "dine",
       "state": "CA",
@@ -9938,7 +9938,7 @@
       "fetchedAt": "2026-03-03T03:23:31.737Z"
     },
     {
-      "id": 1104,
+      "id": 25,
       "name": "La Toque",
       "section": "dine",
       "state": "CA",
@@ -10012,7 +10012,7 @@
       "fetchedAt": "2026-03-03T03:23:33.367Z"
     },
     {
-      "id": 1105,
+      "id": 227,
       "name": "Zen Noodle Bar",
       "section": "dine",
       "state": "CA",
@@ -10037,7 +10037,7 @@
       "fetchedAt": "2026-03-03T03:23:33.752Z"
     },
     {
-      "id": 1106,
+      "id": 106,
       "name": "Mrs Fields",
       "section": "dine",
       "state": "CA",
@@ -10066,7 +10066,7 @@
       "fetchedAt": "2026-03-03T03:23:34.143Z"
     },
     {
-      "id": 1107,
+      "id": 225,
       "name": "Ultra Sushi",
       "section": "dine",
       "state": "CA",
@@ -10117,7 +10117,7 @@
       "fetchedAt": "2026-03-03T03:23:34.912Z"
     },
     {
-      "id": 1108,
+      "id": 66,
       "name": "Cafe Broadway Dim Sum",
       "section": "dine",
       "state": "CA",
@@ -10190,7 +10190,7 @@
       "fetchedAt": "2026-03-03T03:23:36.049Z"
     },
     {
-      "id": 1109,
+      "id": 88,
       "name": "House of Dim Sum",
       "section": "dine",
       "state": "CA",
@@ -10229,7 +10229,7 @@
       "fetchedAt": "2026-03-03T03:23:37.126Z"
     },
     {
-      "id": 1110,
+      "id": 230,
       "name": "Golden Bay Seafood Harbor",
       "section": "dine",
       "state": "CA",
@@ -10349,7 +10349,7 @@
       "fetchedAt": "2026-03-03T03:23:39.086Z"
     },
     {
-      "id": 1111,
+      "id": 107,
       "name": "Gao Viet Kitchen",
       "section": "dine",
       "state": "CA",
@@ -10364,7 +10364,7 @@
       "fetchedAt": "2026-03-03T03:23:39.490Z"
     },
     {
-      "id": 1112,
+      "id": 75,
       "name": "Hi Sweetie Tea and Treats",
       "section": "dine",
       "state": "CA",
@@ -10466,7 +10466,7 @@
       "fetchedAt": "2026-03-03T03:23:41.459Z"
     },
     {
-      "id": 1113,
+      "id": 292,
       "name": "Tindahan Pinoy",
       "section": "dine",
       "state": "CA",
@@ -10481,7 +10481,7 @@
       "fetchedAt": "2026-03-03T03:23:41.862Z"
     },
     {
-      "id": 1114,
+      "id": 115,
       "name": "槟城美食邨",
       "section": "dine",
       "state": "CA",
@@ -10516,7 +10516,7 @@
       "fetchedAt": "2026-03-03T03:23:42.641Z"
     },
     {
-      "id": 1115,
+      "id": 268,
       "name": "Hotpot Champ",
       "section": "dine",
       "address": "801 Kearny St, San Francisco, CA 94108",
@@ -10582,7 +10582,7 @@
       "fetchedAt": "2026-03-03T03:23:44.218Z"
     },
     {
-      "id": 1116,
+      "id": 349,
       "name": "金海湾特价皇帝蟹宴$619",
       "section": "dine",
       "state": "CA",
@@ -10618,7 +10618,7 @@
       "fetchedAt": "2026-03-03T03:23:45.005Z"
     },
     {
-      "id": 1117,
+      "id": 50,
       "name": "Our Branch Store",
       "section": "dine",
       "state": "CA",
@@ -10700,7 +10700,7 @@
       "fetchedAt": "2026-03-03T03:23:46.553Z"
     },
     {
-      "id": 1118,
+      "id": 67,
       "name": "Dim Sum Corner",
       "section": "dine",
       "state": "CA",
@@ -10830,7 +10830,7 @@
       "fetchedAt": "2026-03-03T03:23:48.784Z"
     },
     {
-      "id": 1119,
+      "id": 198,
       "name": "3 Bees Coffee",
       "section": "dine",
       "state": "CA",
@@ -10855,7 +10855,7 @@
       "fetchedAt": "2026-03-03T03:23:49.172Z"
     },
     {
-      "id": 1120,
+      "id": 279,
       "name": "Pho Hoa + Jazen Tea",
       "section": "dine",
       "state": "CA",
@@ -10928,7 +10928,7 @@
       "fetchedAt": "2026-03-03T03:23:50.377Z"
     },
     {
-      "id": 1121,
+      "id": 109,
       "name": "a Mano",
       "section": "dine",
       "state": "CA",
@@ -10997,7 +10997,7 @@
       "fetchedAt": "2026-03-03T03:23:51.551Z"
     },
     {
-      "id": 1122,
+      "id": 169,
       "name": "Koi Palace 鯉魚門 大龍蝦撈喜（蠔）門宴",
       "section": "dine",
       "state": "CA",
@@ -11093,7 +11093,7 @@
       "fetchedAt": "2026-03-03T03:23:53.193Z"
     },
     {
-      "id": 1123,
+      "id": 194,
       "name": "Phở Saigon II",
       "section": "dine",
       "state": "CA",
@@ -11129,7 +11129,7 @@
       "fetchedAt": "2026-03-03T03:23:53.967Z"
     },
     {
-      "id": 1124,
+      "id": 175,
       "name": "一鼎火锅 Top Pot",
       "section": "dine",
       "state": "CA",
@@ -11197,7 +11197,7 @@
       "fetchedAt": "2026-03-03T03:23:55.289Z"
     },
     {
-      "id": 1125,
+      "id": 229,
       "name": "New Thai Elephant 新大象泰國菜",
       "section": "dine",
       "state": "CA",
@@ -11214,7 +11214,7 @@
       "fetchedAt": "2026-03-03T03:23:55.674Z"
     },
     {
-      "id": 1126,
+      "id": 93,
       "name": "Utopia Cafe",
       "section": "dine",
       "state": "CA",
@@ -11232,7 +11232,7 @@
       "fetchedAt": "2026-03-03T03:23:56.034Z"
     },
     {
-      "id": 1127,
+      "id": 216,
       "name": "Sapore Express",
       "section": "dine",
       "state": "CA",
@@ -11275,7 +11275,7 @@
       "fetchedAt": "2026-03-03T03:23:56.788Z"
     },
     {
-      "id": 1128,
+      "id": 98,
       "name": "The Lucky Creation Vegetarian Restaurant",
       "section": "dine",
       "address": "854 Washington St, San Francisco, CA 94108",
@@ -11342,7 +11342,7 @@
       "fetchedAt": "2026-03-03T03:23:57.552Z"
     },
     {
-      "id": 1129,
+      "id": 201,
       "name": "Namaste SF Indian Cuisine",
       "section": "dine",
       "state": "CA",
@@ -11359,7 +11359,7 @@
       "fetchedAt": "2026-03-03T03:23:57.929Z"
     },
     {
-      "id": 1130,
+      "id": 209,
       "name": "MOUNTAIN MIKE'S PIZZA",
       "section": "dine",
       "state": "CA",
@@ -11375,7 +11375,7 @@
       "fetchedAt": "2026-03-03T03:23:58.307Z"
     },
     {
-      "id": 1131,
+      "id": 370,
       "name": "Smile House Cafe",
       "section": "dine",
       "address": "1030 Taraval St, San Francisco, CA 94116",
@@ -11399,7 +11399,7 @@
       "fetchedAt": "2026-03-03T03:23:58.758Z"
     },
     {
-      "id": 1132,
+      "id": 174,
       "name": "Spiral Sushi Happy Hour 30%off",
       "section": "dine",
       "state": "CA",
@@ -11437,7 +11437,7 @@
       "fetchedAt": "2026-03-03T03:23:59.555Z"
     },
     {
-      "id": 1133,
+      "id": 331,
       "name": "Shish Grill",
       "section": "dine",
       "state": "CA",
@@ -11475,7 +11475,7 @@
       "fetchedAt": "2026-03-03T03:24:00.479Z"
     },
     {
-      "id": 1134,
+      "id": 206,
       "name": "Cheung Hing",
       "section": "dine",
       "state": "CA",
@@ -11490,7 +11490,7 @@
       "fetchedAt": "2026-03-03T03:24:00.903Z"
     },
     {
-      "id": 1135,
+      "id": 185,
       "name": "FISH GRILL",
       "section": "dine",
       "state": "CA",
@@ -11508,7 +11508,7 @@
       "fetchedAt": "2026-03-03T03:24:01.294Z"
     },
     {
-      "id": 1136,
+      "id": 334,
       "name": "Al Fin Restaurant",
       "section": "dine",
       "state": "CA",
@@ -11550,7 +11550,7 @@
       "fetchedAt": "2026-03-03T03:24:02.107Z"
     },
     {
-      "id": 1137,
+      "id": 44,
       "name": "Hubei Restaurant",
       "section": "dine",
       "state": "CA",
@@ -11590,7 +11590,7 @@
       "fetchedAt": "2026-03-03T03:24:02.880Z"
     },
     {
-      "id": 1138,
+      "id": 80,
       "name": "Imperial Palace",
       "section": "dine",
       "state": "CA",
@@ -11620,7 +11620,7 @@
       "fetchedAt": "2026-03-03T03:24:03.251Z"
     },
     {
-      "id": 1139,
+      "id": 265,
       "name": "Hot Johnnie's",
       "section": "dine",
       "state": "CA",
@@ -11637,7 +11637,7 @@
       "fetchedAt": "2026-03-03T03:24:03.624Z"
     },
     {
-      "id": 1140,
+      "id": 310,
       "name": "Luna Loca",
       "section": "dine",
       "state": "CA",
@@ -11673,7 +11673,7 @@
       "fetchedAt": "2026-03-03T03:24:04.372Z"
     },
     {
-      "id": 1141,
+      "id": 200,
       "name": "Backhaus",
       "section": "dine",
       "state": "CA",
@@ -11720,7 +11720,7 @@
       "fetchedAt": "2026-03-03T03:24:05.116Z"
     },
     {
-      "id": 1142,
+      "id": 95,
       "name": "Yuet Lee Seafood Restaurant",
       "section": "dine",
       "state": "CA",
@@ -11741,7 +11741,7 @@
       "fetchedAt": "2026-03-03T03:24:05.497Z"
     },
     {
-      "id": 1143,
+      "id": 142,
       "name": "Taishoken",
       "section": "dine",
       "state": "CA",
@@ -11760,7 +11760,7 @@
       "fetchedAt": "2026-03-03T03:24:05.864Z"
     },
     {
-      "id": 1144,
+      "id": 164,
       "name": "ABC Chicken",
       "section": "dine",
       "state": "CA",
@@ -11779,7 +11779,7 @@
       "fetchedAt": "2026-03-03T03:24:06.253Z"
     },
     {
-      "id": 1145,
+      "id": 71,
       "name": "糖潮 港式飲茶粵菜",
       "section": "dine",
       "state": "CA",
@@ -11816,7 +11816,7 @@
       "fetchedAt": "2026-03-03T03:24:07.086Z"
     },
     {
-      "id": 1146,
+      "id": 278,
       "name": "Pho Dublin",
       "section": "dine",
       "state": "CA",
@@ -11831,7 +11831,7 @@
       "fetchedAt": "2026-03-03T03:24:07.464Z"
     },
     {
-      "id": 1147,
+      "id": 218,
       "name": "SimplyCake",
       "section": "dine",
       "state": "CA",
@@ -11855,7 +11855,7 @@
       "fetchedAt": "2026-03-03T03:24:07.833Z"
     },
     {
-      "id": 1148,
+      "id": 100,
       "name": "Biscoff Coffee Corner",
       "section": "dine",
       "state": "CA",
@@ -11957,7 +11957,7 @@
       "fetchedAt": "2026-03-03T03:24:09.351Z"
     },
     {
-      "id": 1149,
+      "id": 159,
       "name": "Round Table Pizza",
       "section": "dine",
       "state": "CA",
@@ -12023,7 +12023,7 @@
       "fetchedAt": "2026-03-03T03:24:10.489Z"
     },
     {
-      "id": 1150,
+      "id": 277,
       "name": "Paris Baguette",
       "section": "dine",
       "state": "CA",
@@ -12059,7 +12059,7 @@
       "fetchedAt": "2026-03-03T03:24:11.271Z"
     },
     {
-      "id": 1151,
+      "id": 56,
       "name": "欢迎于2024年5月31日下午4:00-5:30（太平洋标准时间）加入主厨Martin Yan的在线烹饪课程。 157E#J : https://www.centralmarket.com/cooki",
       "section": "dine",
       "state": "CA",
@@ -12104,7 +12104,7 @@
       "fetchedAt": "2026-03-03T03:24:12.066Z"
     },
     {
-      "id": 1152,
+      "id": 276,
       "name": "Ohana Hawaiian BBQ",
       "section": "dine",
       "state": "CA",
@@ -12121,7 +12121,7 @@
       "fetchedAt": "2026-03-03T03:24:12.556Z"
     },
     {
-      "id": 1153,
+      "id": 271,
       "name": "Krispy Krunchy Chicken",
       "section": "dine",
       "state": "CA",
@@ -12138,7 +12138,7 @@
       "fetchedAt": "2026-03-03T03:24:12.960Z"
     },
     {
-      "id": 1154,
+      "id": 368,
       "name": "Little Sweet",
       "section": "dine",
       "address": "1923 Ocean Ave, San Francisco, CA 94127",
@@ -12161,7 +12161,7 @@
       "fetchedAt": "2026-03-03T03:24:13.327Z"
     },
     {
-      "id": 1155,
+      "id": 211,
       "name": "Shine-N-Seal Car Wash",
       "section": "guide",
       "state": "CA",
@@ -12176,7 +12176,7 @@
       "fetchedAt": "2026-03-03T03:24:13.709Z"
     },
     {
-      "id": 1156,
+      "id": 239,
       "name": "华埠歷史文化协會",
       "section": "guide",
       "address": "816 Stockton St, San Francisco, CA 94108",
@@ -12201,7 +12201,7 @@
       "fetchedAt": "2026-03-03T03:24:14.086Z"
     },
     {
-      "id": 1157,
+      "id": 237,
       "name": "Chinatown Parking",
       "section": "guide",
       "address": "728 Pacific Ave, San Francisco, CA 94133",
@@ -12250,7 +12250,7 @@
       "fetchedAt": "2026-03-03T03:24:14.822Z"
     },
     {
-      "id": 1158,
+      "id": 344,
       "name": "Get It Done Gardening",
       "section": "guide",
       "state": "CA",
@@ -12309,7 +12309,7 @@
       "fetchedAt": "2026-03-03T03:24:15.983Z"
     },
     {
-      "id": 1159,
+      "id": 267,
       "name": "Irvington Cleaners",
       "section": "guide",
       "state": "CA",
@@ -12350,7 +12350,7 @@
       "fetchedAt": "2026-03-03T03:24:16.738Z"
     },
     {
-      "id": 1160,
+      "id": 21,
       "name": "太陽能安裝工程",
       "section": "guide",
       "state": "CA",
@@ -12368,7 +12368,7 @@
       "fetchedAt": "2026-03-03T03:24:17.130Z"
     },
     {
-      "id": 1161,
+      "id": 282,
       "name": "Proformance Pilates + Wellness",
       "section": "guide",
       "state": "CA",
@@ -12431,7 +12431,7 @@
       "fetchedAt": "2026-03-03T03:24:18.283Z"
     },
     {
-      "id": 1162,
+      "id": 221,
       "name": "Ahsha for MAYOR",
       "section": "guide",
       "state": "CA",
@@ -12449,7 +12449,7 @@
       "fetchedAt": "2026-03-03T03:24:18.688Z"
     },
     {
-      "id": 1163,
+      "id": 42,
       "name": "GENERATE FREE ELECTRICITY, WITH A SOLAR POWER SYSTEM, SAVE MONEY, MAKE MONEY.",
       "section": "guide",
       "state": "CA",
@@ -12467,7 +12467,7 @@
       "fetchedAt": "2026-03-03T03:24:19.096Z"
     },
     {
-      "id": 1164,
+      "id": 327,
       "name": "Elite MD",
       "section": "guide",
       "state": "CA",
@@ -12521,7 +12521,7 @@
       "fetchedAt": "2026-03-03T03:24:20.254Z"
     },
     {
-      "id": 1165,
+      "id": 190,
       "name": "NAIL SPA BOUTIQUE",
       "section": "guide",
       "state": "CA",
@@ -12536,7 +12536,7 @@
       "fetchedAt": "2026-03-03T03:24:20.637Z"
     },
     {
-      "id": 1166,
+      "id": 342,
       "name": "DK Services Tire & Repair",
       "section": "guide",
       "state": "CA",
@@ -12553,7 +12553,7 @@
       "fetchedAt": "2026-03-03T03:24:21.028Z"
     },
     {
-      "id": 1167,
+      "id": 347,
       "name": "Sharma Dental Dublin",
       "section": "guide",
       "state": "CA",
@@ -12571,7 +12571,7 @@
       "fetchedAt": "2026-03-03T03:24:21.426Z"
     },
     {
-      "id": 1168,
+      "id": 319,
       "name": "Golden State Dermatology",
       "section": "guide",
       "state": "CA",
@@ -12645,7 +12645,7 @@
       "fetchedAt": "2026-03-03T03:24:22.565Z"
     },
     {
-      "id": 1169,
+      "id": 55,
       "name": "環潔靜公司，專業殺滅細菌病毒服務",
       "section": "guide",
       "state": "CA",
@@ -12687,7 +12687,7 @@
       "fetchedAt": "2026-03-03T03:24:23.335Z"
     },
     {
-      "id": 1170,
+      "id": 202,
       "name": "Auto City Car Wash",
       "section": "guide",
       "state": "CA",
@@ -12777,7 +12777,7 @@
       "fetchedAt": "2026-03-03T03:24:24.856Z"
     },
     {
-      "id": 1171,
+      "id": 22,
       "name": "SAVE MONEY4 MAKE MONEY",
       "section": "guide",
       "state": "CA",
@@ -12795,7 +12795,7 @@
       "fetchedAt": "2026-03-03T03:24:25.260Z"
     },
     {
-      "id": 1172,
+      "id": 287,
       "name": "Shubh",
       "section": "guide",
       "state": "CA",
@@ -12810,7 +12810,7 @@
       "fetchedAt": "2026-03-03T03:24:25.659Z"
     },
     {
-      "id": 1173,
+      "id": 210,
       "name": "Davey's European Auto and Smog, Main Street, Half Moon Bay, CA",
       "section": "guide",
       "state": "CA",
@@ -12825,7 +12825,7 @@
       "fetchedAt": "2026-03-03T03:24:26.060Z"
     },
     {
-      "id": 1174,
+      "id": 339,
       "name": "Our Secret Beauty Ink",
       "section": "guide",
       "state": "CA",
@@ -12840,7 +12840,7 @@
       "fetchedAt": "2026-03-03T03:24:26.457Z"
     },
     {
-      "id": 1175,
+      "id": 264,
       "name": "Gul Auto Care",
       "section": "guide",
       "state": "CA",
@@ -12857,7 +12857,7 @@
       "fetchedAt": "2026-03-03T03:24:26.858Z"
     },
     {
-      "id": 1176,
+      "id": 354,
       "name": "唐人街吃喝玩乐指南 sfchinatownguide.com",
       "section": "guide",
       "state": "CA",
@@ -12891,7 +12891,7 @@
       "fetchedAt": "2026-03-03T03:24:27.653Z"
     },
     {
-      "id": 1177,
+      "id": 199,
       "name": "Great Clips san rafael",
       "section": "guide",
       "state": "CA",
@@ -12932,7 +12932,7 @@
       "fetchedAt": "2026-03-03T03:24:28.413Z"
     },
     {
-      "id": 1178,
+      "id": 156,
       "name": "华体会筹款",
       "section": "guide",
       "state": "CA",
@@ -13010,7 +13010,7 @@
       "fetchedAt": "2026-03-03T03:24:29.963Z"
     },
     {
-      "id": 1179,
+      "id": 345,
       "name": "Rainbow Auto Body Repair and Paint",
       "section": "guide",
       "state": "CA",
@@ -13027,7 +13027,7 @@
       "fetchedAt": "2026-03-03T03:24:30.368Z"
     },
     {
-      "id": 1180,
+      "id": 332,
       "name": "The Service Outlet",
       "section": "guide",
       "state": "CA",
@@ -13044,7 +13044,7 @@
       "fetchedAt": "2026-03-03T03:24:30.777Z"
     },
     {
-      "id": 1181,
+      "id": 307,
       "name": "Pars Area Rug Services",
       "section": "guide",
       "state": "CA",
@@ -13061,7 +13061,7 @@
       "fetchedAt": "2026-03-03T03:24:31.182Z"
     },
     {
-      "id": 1182,
+      "id": 357,
       "name": "Reconnect Body Therapy",
       "section": "guide",
       "state": "CA",
@@ -13094,7 +13094,7 @@
       "fetchedAt": "2026-03-03T03:24:31.970Z"
     },
     {
-      "id": 1183,
+      "id": 336,
       "name": "Agellon",
       "section": "guide",
       "state": "CA",
@@ -13109,7 +13109,7 @@
       "fetchedAt": "2026-03-03T03:24:32.380Z"
     },
     {
-      "id": 1184,
+      "id": 322,
       "name": "Livermore Dental Center",
       "section": "guide",
       "state": "CA",
@@ -13192,7 +13192,7 @@
       "fetchedAt": "2026-03-03T03:24:33.936Z"
     },
     {
-      "id": 1185,
+      "id": 47,
       "name": "建筑牌照速成班",
       "section": "guide",
       "state": "CA",
@@ -13209,7 +13209,7 @@
       "fetchedAt": "2026-03-03T03:24:34.330Z"
     },
     {
-      "id": 1186,
+      "id": 356,
       "name": "中秋游园会2024 Sunnyvale",
       "section": "guide",
       "state": "CA",
@@ -13227,7 +13227,7 @@
       "fetchedAt": "2026-03-03T03:24:34.741Z"
     },
     {
-      "id": 1187,
+      "id": 30,
       "name": "Chinatown parking",
       "section": "guide",
       "state": "CA",
@@ -13245,7 +13245,7 @@
       "fetchedAt": "2026-03-03T03:24:35.133Z"
     },
     {
-      "id": 1188,
+      "id": 158,
       "name": "AUTO CITY car wash",
       "section": "guide",
       "state": "CA",
@@ -13279,7 +13279,7 @@
       "fetchedAt": "2026-03-03T03:24:35.944Z"
     },
     {
-      "id": 1189,
+      "id": 294,
       "name": "Workin Dogs",
       "section": "guide",
       "state": "CA",
@@ -13343,7 +13343,7 @@
       "fetchedAt": "2026-03-03T03:24:37.422Z"
     },
     {
-      "id": 1190,
+      "id": 337,
       "name": "Breeze Dental Group",
       "section": "guide",
       "state": "CA",
@@ -13405,7 +13405,7 @@
       "fetchedAt": "2026-03-03T03:24:38.546Z"
     },
     {
-      "id": 1191,
+      "id": 313,
       "name": "三间寿司店出售",
       "section": "guide",
       "state": "CA",
@@ -13420,7 +13420,7 @@
       "fetchedAt": "2026-03-03T03:24:38.957Z"
     },
     {
-      "id": 1192,
+      "id": 317,
       "name": "Kumon",
       "section": "guide",
       "state": "CA",
@@ -13437,7 +13437,7 @@
       "fetchedAt": "2026-03-03T03:24:39.349Z"
     },
     {
-      "id": 1193,
+      "id": 364,
       "name": "William Yip 葉鵬鏘",
       "section": "guide",
       "state": "CA",
@@ -13457,7 +13457,7 @@
       "fetchedAt": "2026-03-03T03:24:39.729Z"
     },
     {
-      "id": 1194,
+      "id": 362,
       "name": "DOWNTOWN SF, NIGHT MARKET",
       "section": "guide",
       "state": "CA",
@@ -13475,7 +13475,7 @@
       "fetchedAt": "2026-03-03T03:24:40.126Z"
     },
     {
-      "id": 1195,
+      "id": 363,
       "name": "三藩市列治文區中秋街會",
       "section": "guide",
       "state": "CA",
@@ -13515,7 +13515,7 @@
       "fetchedAt": "2026-03-03T03:24:40.914Z"
     },
     {
-      "id": 1196,
+      "id": 272,
       "name": "Amy Li 黎小姐",
       "section": "guide",
       "state": "CA",
@@ -13542,7 +13542,7 @@
       "fetchedAt": "2026-03-03T03:24:41.287Z"
     },
     {
-      "id": 1197,
+      "id": 33,
       "name": "灣區地產博覽會",
       "section": "guide",
       "state": "CA",
@@ -13560,7 +13560,7 @@
       "fetchedAt": "2026-03-03T03:24:41.692Z"
     },
     {
-      "id": 1198,
+      "id": 40,
       "name": "當你有了太陽能，免費用電，還能賺錢。",
       "section": "guide",
       "state": "CA",
@@ -13616,7 +13616,7 @@
       "fetchedAt": "2026-03-03T03:24:42.871Z"
     },
     {
-      "id": 1199,
+      "id": 298,
       "name": "Body Fit Training",
       "section": "guide",
       "state": "CA",
@@ -13631,7 +13631,7 @@
       "fetchedAt": "2026-03-03T03:24:43.266Z"
     },
     {
-      "id": 1200,
+      "id": 324,
       "name": "Apple Blossom Moulding and Millworks",
       "section": "guide",
       "state": "CA",
@@ -13648,7 +13648,7 @@
       "fetchedAt": "2026-03-03T03:24:43.664Z"
     },
     {
-      "id": 1201,
+      "id": 242,
       "name": "華埠商人協會",
       "section": "guide",
       "address": "816 Stockton St, San Francisco, CA 94108",
@@ -13672,7 +13672,7 @@
       "fetchedAt": "2026-03-03T03:24:44.042Z"
     },
     {
-      "id": 1202,
+      "id": 36,
       "name": "Amy Li 地產經紀",
       "section": "guide",
       "state": "CA",
@@ -13688,7 +13688,7 @@
       "fetchedAt": "2026-03-03T03:24:44.765Z"
     },
     {
-      "id": 1203,
+      "id": 39,
       "name": "當你有了太陽能，免費用電，還能賺錢。",
       "section": "guide",
       "state": "CA",
@@ -13734,7 +13734,7 @@
       "fetchedAt": "2026-03-03T03:24:45.538Z"
     },
     {
-      "id": 1204,
+      "id": 212,
       "name": "GREAT CLIPS",
       "section": "guide",
       "state": "CA",
@@ -13749,7 +13749,7 @@
       "fetchedAt": "2026-03-03T03:24:45.951Z"
     },
     {
-      "id": 1205,
+      "id": 353,
       "name": "華埠車展暨古典名車游行  CAR SHOW & PARADE 2024",
       "section": "guide",
       "state": "CA",
@@ -13765,7 +13765,7 @@
       "fetchedAt": "2026-03-03T03:24:46.334Z"
     },
     {
-      "id": 1206,
+      "id": 359,
       "name": "Hello Beautiful Skin Studio",
       "section": "guide",
       "state": "CA",
@@ -13781,7 +13781,7 @@
       "fetchedAt": "2026-03-03T03:24:46.740Z"
     },
     {
-      "id": 1207,
+      "id": 77,
       "name": "環潔淨是專業做室內霉菌處理",
       "section": "guide",
       "state": "CA",
@@ -13799,7 +13799,7 @@
       "fetchedAt": "2026-03-03T03:24:47.137Z"
     },
     {
-      "id": 1208,
+      "id": 358,
       "name": "Ohm Thai Massage",
       "section": "guide",
       "state": "CA",
@@ -13846,7 +13846,7 @@
       "fetchedAt": "2026-03-03T03:24:47.931Z"
     },
     {
-      "id": 1209,
+      "id": 197,
       "name": "Wicked Automotive",
       "section": "guide",
       "state": "CA",
@@ -13863,7 +13863,7 @@
       "fetchedAt": "2026-03-03T03:24:48.327Z"
     },
     {
-      "id": 1210,
+      "id": 178,
       "name": "SINSEI FARMERS MARKET MERCANTE",
       "section": "guide",
       "state": "CA",
@@ -13881,7 +13881,7 @@
       "fetchedAt": "2026-03-03T03:24:48.731Z"
     },
     {
-      "id": 1211,
+      "id": 300,
       "name": "Huntington Learning Center",
       "section": "guide",
       "state": "CA",
@@ -13943,7 +13943,7 @@
       "fetchedAt": "2026-03-03T03:24:49.917Z"
     },
     {
-      "id": 1212,
+      "id": 240,
       "name": "舊金山中華文化中心",
       "section": "guide",
       "address": "750 Kearny St, 3rd Floor, San Francisco, CA 94108",
@@ -13967,7 +13967,7 @@
       "fetchedAt": "2026-03-03T03:24:50.288Z"
     },
     {
-      "id": 1213,
+      "id": 262,
       "name": "Great Clips",
       "section": "guide",
       "state": "CA",
@@ -13984,7 +13984,7 @@
       "fetchedAt": "2026-03-03T03:24:51.075Z"
     },
     {
-      "id": 1214,
+      "id": 335,
       "name": "Dougherty Road Smog",
       "section": "guide",
       "state": "CA",

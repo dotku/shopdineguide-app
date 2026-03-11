@@ -8,6 +8,8 @@ import {
   ActivityIndicator,
   Dimensions,
   Share,
+  useWindowDimensions,
+  Platform
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
@@ -26,19 +28,30 @@ export default function BusinessDetailScreen() {
   const [loading, setLoading] = useState(true);
   const [bookmarked, setBookmarked] = useState(false);
   const [galleryIndex, setGalleryIndex] = useState(0);
+  
+  const { width: windowWidth, height: windowHeight } = useWindowDimensions();
+  const isWeb = Platform.OS === 'web';
+  const containerWidth = isWeb ? Math.min(windowWidth, 900) : windowWidth;
+ 
+
 
   useEffect(() => {
     async function load() {
+      console.log('=== Loading business detail ===');
+      console.log('Business ID:', id);
       try {
         const biz = await database.getBusinessById(Number(id));
+        console.log('Business loaded:', biz ? biz.name : 'null');
         setBusiness(biz);
         if (biz) {
           const isBookmarked = await database.isBookmarked(biz.id);
+          console.log('Bookmark status:', isBookmarked);
           setBookmarked(isBookmarked);
         }
       } catch (err) {
         console.error('Failed to load business:', err);
       } finally {
+        console.log('Loading complete');
         setLoading(false);
       }
     }
@@ -81,11 +94,13 @@ export default function BusinessDetailScreen() {
   }
 
   const galleryUrls = parseJsonField<string[]>(business.galleryUrls, []);
-  const allImages = [
-    business.posterUrl,
-    business.bannerUrl,
-    ...galleryUrls,
-  ].filter(Boolean) as string[];
+  const allImages = Array.from(
+    new Set([
+      business.posterUrl,
+      business.bannerUrl,
+      ...galleryUrls,
+    ].filter(Boolean))
+  ) as string[];
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
@@ -112,23 +127,35 @@ export default function BusinessDetailScreen() {
         {/* Image Gallery */}
         {allImages.length > 0 ? (
           <View style={styles.imageContainer}>
-            <ScrollView
+           <ScrollView
               horizontal
               pagingEnabled
               showsHorizontalScrollIndicator={false}
+              scrollEventThrottle={16}
               onMomentumScrollEnd={(e) => {
-                const idx = Math.round(e.nativeEvent.contentOffset.x / SCREEN_WIDTH);
+                const idx = Math.round(e.nativeEvent.contentOffset.x / containerWidth);
                 setGalleryIndex(idx);
               }}
+              style={{ width: containerWidth }}
             >
               {allImages.map((uri, i) => (
-                <Image
+                <View 
                   key={i}
-                  source={{ uri }}
-                  style={styles.galleryImage}
-                  contentFit="cover"
-                  transition={200}
-                />
+                  style={{
+                    width: containerWidth,
+                    backgroundColor: '#f5f5f5',
+                  }}
+                >
+                  <Image
+                    source={{ uri }}
+                    style={{
+                      width: containerWidth,
+                     aspectRatio: 0.75,  // 1:1 正方形，或改为 4/3, 16/9
+                    }}
+                    contentFit="cover"
+                    transition={200}
+                  />
+                </View>
               ))}
             </ScrollView>
             {allImages.length > 1 ? (
